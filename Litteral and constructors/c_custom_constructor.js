@@ -6,6 +6,8 @@ var Person = function () {
       return "Hi, my name is " + this.name;
     });
 };
+// constructors always return an object that inherits from the constructor's prototype
+// var this = Object.create(Person.prototype);
 
 var dave = new Person();
 dave.name = "Dave";
@@ -23,3 +25,13 @@ console.log(clara.hasLongName());
 var elisabeth = new Person();
 elisabeth.name = "elisabeth";
 console.log(elisabeth.hasLongName());
+
+// Constructors always return an object even if no properties were added
+var Ex = function () {
+  console.log("bla");
+  this.prop = 1;
+};
+
+var x = new Ex();
+console.log(x.prototype === Ex);
+console.log(x.prototype);
