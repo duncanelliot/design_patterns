@@ -15,3 +15,8 @@ dog.getName = function () {
 
 // and deleted
 delete dog.getName;
+
+// the constructor to littereals is the Object() constructor
+var y = { aProp: 1 };
+console.log(y.constructor);
+console.log(y.constructor === Object);
