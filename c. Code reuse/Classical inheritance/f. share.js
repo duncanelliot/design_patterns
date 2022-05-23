@@ -1,14 +1,10 @@
 /* 
   PROs
-  - Own properties and methods are added
   - Prototype properties  and method are added
 
   CONs
-  - Own props tend to be instance specific and not wanted (in this case Elton)
-  - Usually we only want prototype props
-  - Args cannot be passed on to the parent 
-        var _  = new Child("Seth")
-        _.say() ==> Elton 
+  - Args not passed
+  - own props missing
 */
 
 // parent constructor
